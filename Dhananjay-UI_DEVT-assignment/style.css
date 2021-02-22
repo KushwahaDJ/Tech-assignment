@@ -1,0 +1,96 @@
+:root {
+  --backgroundPrimary: #85bc26;
+  --backgroundSecondry: #d8e4c3;
+  --textColorPrimary: #5c6868;
+  --textColorSecondry: #007bffe0;
+}
+
+/* Mobo first approch css by default css will work for mobile */
+.questions {
+  background: var(--backgroundPrimary);
+  color: #fff;
+}
+.questions h1 {
+  margin: 0;
+  font-size: 16px;
+  padding: 4px 6px;
+  line-height: 40px;
+}
+.questions span {
+  position: absolute;
+  top: 11px;
+  right: 58px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.questions p {
+  position: absolute;
+  right: 51px;
+  top: 10px;
+}
+.questions .totalQue {
+  right: 28px;
+}
+.description {
+  background: var(--backgroundSecondry);
+}
+.description p {
+  font-size: 14px;
+  padding: 4px 6px;
+}
+.instruction {
+  color: var(--textColorSecondry);
+}
+.instruction p {
+  font-size: 14px;
+}
+input[type="checkbox"] {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+.img {
+  padding: 18px;
+  background: var(--backgroundSecondry);
+}
+button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background: #bcbcbc;
+  margin: 32px auto 54px;
+  cursor: pointer;
+}
+.col-lg-4:last-child {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .questions {
+    height: 150%;
+    padding: 8px;
+    width: 134%;
+    border-radius: 0 0 4px 4px;
+  }
+  .questions span {
+    top: 64%;
+    left: 38%;
+    transform: translate(-50%);
+  }
+  .instruction {
+    margin-left: 96px;
+  }
+  .questions .totalQue {
+    left: 70%;
+  }
+  .questions p {
+    top: 60px;
+    right: 31px;
+  }
+  .hidden {
+    display: none !important;
+  }
+}
